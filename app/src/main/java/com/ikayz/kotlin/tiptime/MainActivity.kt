@@ -3,6 +3,7 @@ package com.ikayz.kotlin.tiptime
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ikayz.kotlin.tiptime.databinding.ActivityMainBinding
+import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         if (roundUp) {
             tip = kotlin.math.ceil(tip)
         }
-
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+        binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
     }
 }
