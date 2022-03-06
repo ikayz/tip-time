@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="teal_green">#009999</color>
-    <color name="teal">#069</color>
-    <color name="teal_bright">#008899</color>
+    <color name="teal_green">#FF009999</color>
+    <color name="teal">#FF006699</color>
+    <color name="teal_bright">#FF008899</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="green">#388e3c</color>
+    <color name="green_dark">#00600f</color>
+    <color name="green_light">#6abf69</color>
+    <color name="blue">#0288d1</color>
+    <color name="blue_dark">#005b9f</color>
+    <color name="blue_light">#5eb8ff</color>
 </resources>
