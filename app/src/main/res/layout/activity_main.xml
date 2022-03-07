@@ -7,12 +7,24 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/icon_cost_of_service"
+        app:srcCompat="@drawable/ic_store"
+        android:layout_width="wrap_content"
+        android:importantForAccessibility="no"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cost_of_service"
+        app:layout_constraintBottom_toBottomOf="@id/cost_of_service"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/cost_of_service"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:hint="@string/cost_of_service_hint"
         app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/icon_cost_of_service"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -23,6 +35,8 @@
             />
 
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <TextView
         android:id="@+id/service_question"
