@@ -36,13 +36,25 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
+    <ImageView
+        android:id="@+id/icon_service_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_service"
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="@id/service_question"
+        app:layout_constraintBottom_toBottomOf="@id/service_question"
+        />
 
     <TextView
         android:id="@+id/service_question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/service_question"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/icon_cost_of_service"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cost_of_service" />
 
